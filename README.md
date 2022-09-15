@@ -49,6 +49,16 @@ Controleer of Git is geïnstalleerd op de computer waar je op wil werken. GitHub
 
 Indien je de computer in eigen beheer hebt kun je Git ook zelf installeren via de officiële website. Zie ook: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
+Kort samengevat, wanneer je op Linux of Mac werkt kun je Git eenvoudig installeren via de command line. Voor Windows heb je een installer nodig, welke je [hier](https://git-scm.com/download/win) kan downloaden.
+
+Tijdens de installatie krijg je een aantal opties. Om het eenvoudig te houden kun je in vrijwel alle gevallen gewoon de standaard instellingen gebruiken.
+
+![Git installer - default](https://codecrashers.nl/img/github/readme-git-installer-1.png)
+
+Wel kan het handig zijn om Notepad++ (of een andere editor waar je comfortabel mee bent) te kiezen als *default editor* voor Git, in plaats van de standaard optie Vim.
+
+![Git installer - editor](https://codecrashers.nl/img/github/readme-git-installer-3.png)
+
 ### GitHub account
 
 Om gebruik te kunnen maken van deze repository dien je over een GitHub account te beschikken. Registreer jezelf bij GitHub als je daar nog niet over beschikt. Dat kan via deze URL: [https://github.com/signup](https://github.com/signup).
