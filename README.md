@@ -117,7 +117,7 @@ Navigeer naar de locatie waar je je repository wil downloaden. Om in een shell t
 Gebruik vervolgens het volgende commando, waarbij je je `{gebruikersnaam]` en `{repository]` vervangt door je eigen gebruikersnaam en de repository die je wil clonen (zonder accolades).
 
 ```
-git clone https://{gebruikersnaam}@github.com/{gebruikersnaam}/{repository}
+git clone https://github.com/{gebruikersnaam}/{repository}.git
 ```
 
 ![repository clonen 1](https://codecrashers.nl/img/github/readme-git-clone-1.png)
