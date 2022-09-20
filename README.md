@@ -120,7 +120,7 @@ Gebruik vervolgens het volgende commando, waarbij je je `{gebruikersnaam]` en `{
 git clone https://github.com/{gebruikersnaam}/{repository}.git
 ```
 
-![repository clonen 1](https://codecrashers.nl/img/github/readme-git-clone-1.1.png)
+![repository clonen 1](https://codecrashers.nl/img/github/readme-git-clone-1-new.png)
 
 Als het goed is wordt je nu gevraagd om in te loggen om Git te autoriseren.
 
@@ -130,7 +130,7 @@ Als het goed is wordt je nu gevraagd om in te loggen om Git te autoriseren.
 
 Als de authenticatie gelukt is, zal de repository succesvol *gecloned* worden.
 
-![repository clonen 3](https://codecrashers.nl/img/github/readme-git-clone-3.1.png)
+![repository clonen 3](https://codecrashers.nl/img/github/readme-git-clone-3-new.png)
 
 Controleer ten slotte of de mappenstructuur succesvol is aangemaakt in je lokale omgeving. Als dat het geval is, kun je aan de slag met de opdrachten van de cursus.
 
