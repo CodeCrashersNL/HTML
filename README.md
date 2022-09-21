@@ -21,6 +21,7 @@ Deze uniformiteit zorgt er enerzijds voor dat de student altijd een bepaalde opd
 - [Werkwijze](#werkwijze)
 	- [Repository aanmaken](#repository-aanmaken)
 	- [Docenten toegang geven](#docenten-toegang-geven)
+	- [Repository clonen](#repository-clonen)
 	- [Repository vullen](#repository-vullen)
 	- [Mappen synchroniseren](#mappen-synchroniseren)
 	- [Opdrachten inleveren](#opdrachten-inleveren)
