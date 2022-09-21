@@ -19,17 +19,17 @@ Deze uniformiteit zorgt er enerzijds voor dat de student altijd een bepaalde opd
 	- [Installatie Git](#installatie-git)
 	- [GitHub account](#github-account)
 - [Werkwijze](#werkwijze)
-	- [Repository kopiëren](#repository-kopiëren)
+	- [Repository aanmaken](#repository-aanmaken)
 	- [Docenten toegang geven](#docenten-toegang-geven)
-	- [Repository clonen](#repository-clonen)
+	- [Repository vullen](#repository-vullen)
+	- [Mappen synchroniseren](#mappen-synchroniseren)
 	- [Opdrachten inleveren](#opdrachten-inleveren)
-	- [Voortgang aangeven](#voortgang-aangeven)
 
 ## Inhoud van de repository
 
 ### Mappenstructuur
 
-Elke cursus heeft zijn eigen repository met een eigen mappenstructuur.
+Elke cursus heeft zijn eigen repository op GitHub met een eigen mappenstructuur.
 
 Binnen een repository is er één map per les. Per les tref je afzonderlijke mappen aan voor elk van de te maken opdrachten. Binnen de map van een opdracht tref je een `.gitkeep` bestand aan. Dit bestand kun je verder negeren - deze is er puur voor bedoeld zodat GitHub de (anders lege) map wel indexeert.
 
@@ -73,34 +73,31 @@ Zorg dat je de volledige URL van je GitHub profiel kopieert en plakt op de profi
 
 ## Werkwijze
 
-### Repository kopiëren
+### Repository aanmaken
 
-Om gebruik te kunnen maken van de aangeleverde mappenstructuur, dien jij een persoonlijke kopie te krijgen van de beschikbare repository in jouw eigen GitHub account.
+Om gebruik te kunnen maken van de aangeleverde mappenstructuren, dien je eerst over een eigen repository te beschikken in jouw eigen GitHub account voor alle opdrachten die je gaat maken in je opleiding.
 
-Ga naar je repositories tab en klik op de knop "New". Klik vervolgens op de link "Import a repository". Hierin geef je de link op van de repository die je wil kopiëren, bijvoorbeeld [https://github.com/CodeCrashersNL/HTML](https://github.com/CodeCrashersNL/HTML).
-
-Omwille van consistentie dien je je eigen repository exact dezelfde naam te geven als degene die je wil kopiëren.
+Ga naar je repositories tab en klik op de knop "New". Geef je repository een duidelijke naam zodat je docenten weten dat ze hier jouw opdrachten kunnen vinden. Bijvoorbeeld "opdrachten", "CodeCrashers", of de naam van de organisatie waar je je opleiding volgt.
 
 **Let op:** zorg ervoor dat je bij de privacy-instellingen op de optie "Private" klikt. Om de kwaliteit van de opleiding voor andere studenten te waarborgen willen we namelijk niet dat uitwerkingen van opdrachten publiekelijk toegankelijk worden gemaakt.
 
-![nieuwe repository aanmaken](https://codecrashers.nl/img/github/readme-github-new-repo.png)
+
+![nieuwe repository aanmaken](https://codecrashers.nl/img/github/readme-new-repo.png)
 
 De andere instellingen mag je hetzelfde laten. Klik vervolgens op de knop "Create repository".
 
-Als je alles goed hebt gedaan, beschik je nu over een *eigen* HTML (of een ander vak) repository. Controleer nog even of deze inderdaad op "Private" staat. Voel je overigens vrij om de standaard "README.md" met deze handleiding te verwijderen of te vervangen door een eigen readme-bestand.
+Als je alles goed hebt gedaan, beschik je nu over een *eigen* repository. Controleer nog even of deze inderdaad op "Private" staat.
 
-![private repository](https://codecrashers.nl/img/github/readme-github-private-repo.png)
+![nieuwe repository aanmaken](https://codecrashers.nl/img/github/readme-new-repo-private.png)
 
 ### Docenten toegang geven
 
 Zodat zij jouw opdrachten kunnen nakijken, is het van belang dat je jouw docenten uitnodigt om jouw repository te kunnen bekijken.
 Klik op de knop "Settings" en ga naar "Collaborators" onder "Access".
 
-Klik vervolgens op de knop "Add people" en vul de GitHub usernames of e-mailadressen in van je docenten. Vervolgens kun je ze toevoegen als "Collaborator" aan jouw repository.
+Klik vervolgens op de knop "Add people" en vul de GitHub usernames of e-mailadressen in van je docent(en). Vervolgens kun je ze toevoegen als "Collaborator" aan jouw repository.
 
-Overleg zo nodig met je docenten over wie je wel en niet dient uit te nodigen. Mogelijk kan dat verschillen per cursus.
-
-![collaborator uitnodigen](https://codecrashers.nl/img/github/readme-github-invite-collaborator.png)
+![nieuwe repository aanmaken](https://codecrashers.nl/img/github/readme-new-repo-invite-collaborator.png)
 
 ### Repository clonen
 
@@ -120,41 +117,47 @@ Gebruik vervolgens het volgende commando, waarbij je je `{gebruikersnaam]` en `{
 git clone https://github.com/{gebruikersnaam}/{repository}.git
 ```
 
-![repository clonen 1](https://codecrashers.nl/img/github/readme-git-clone-1-new.png)
+![repository clonen 1](https://codecrashers.nl/img/github/readme-git-clone-repo-1.png)
 
 Als het goed is wordt je nu gevraagd om in te loggen om Git te autoriseren.
 
 *Tip: als je werkt op een computer waar alleen jij toegang toe hebt kun je eventueel ook gebruik maken van een SSL in plaats van een HTTPS verbinding. Dan hoef je in principe nooit meer opnieuw in te loggen. Zie [de documentatie](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github).*
 
-![repository clonen 2](https://codecrashers.nl/img/github/readme-git-clone-2.png)
+![repository clonen 2](https://codecrashers.nl/img/github/readme-git-clone-repo-2.png)
 
 Als de authenticatie gelukt is, zal de repository succesvol *gecloned* worden.
 
-![repository clonen 3](https://codecrashers.nl/img/github/readme-git-clone-3-new.png)
+![repository clonen 3](https://codecrashers.nl/img/github/readme-git-clone-repo-3.png)
 
-Controleer ten slotte of de mappenstructuur succesvol is aangemaakt in je lokale omgeving. Als dat het geval is, kun je aan de slag met de opdrachten van de cursus.
+Controleer ten slotte of er een map met de naam van je repository is aangemaakt in je lokale omgeving. Deze map zou verder nog leeg moeten zijn, met uitzondering van een (mogelijk onzichtbare) ".git" subdirectory.
 
-![repository clonen 4](https://codecrashers.nl/img/github/readme-git-clone-4.png)
+![repository clonen 4](https://codecrashers.nl/img/github/readme-git-clone-repo-4.png)
+
+### Repository vullen
+
+Vervolgens ga je *binnen* je lokale repository de mappen toevoegen van de cursus waarmee je wil beginnen. De gehele mappenstructuur kun je eenvoudig downloaden binnen een repository als die van HTML via de knop "Code" en vervolgens "Download Zip".
+
+![repository downloaden](https://codecrashers.nl/img/github/readme-download-repo.png)
+
+Pak de inhoud van deze zip vervolgens uit binnen je repository. Als je het goed hebt gedaan zou de map HTML, met daarin alle HTML lessen en opdrachten, vervolgens op je eigen computer moeten verschijnen. Zorg dat je wel een eventueel "-main" of "-master" achtervoegsel uit de mapnaam weghaalt.
+
+![repository clonen 5](https://codecrashers.nl/img/github/readme-git-repo-vullen.png)
+
+*Voel je vrij om de README.md te verwijderen of te vervangen door je eigen readme.*
+
+Vanaf nu kun je de opdrachten al maken op de correcte plek.
 
 Wanneer een opdrachtomschrijving vraagt om een map aan te maken, hoef je dat dus niet meer te doen - deze map heb je immers al. Wanneer een opdrachtomschrijving vraagt om de map van een eerdere opdracht te kopiëren, hoef je alleen nog maar de *inhoud* van die eerdere opdracht te kopiëren.
 
-### Opdrachten inleveren
+### Mappen synchroniseren
 
-Elke keer wanneer je één of meerdere opdrachten af hebt gemaakt (of verbeterd), zorg je ervoor dat je deze inlevert door ze te *pushen* naar de bijbehorende GitHub repository. Doe dit zo vaak mogelijk - in ieder geval zodra je een volledige les af hebt, of aan het einde van een werkdag.
+Zodra je mappenstructuur lokaal in orde is dien je deze te *pushen* naar je GitHub repository. 
 
 Je kunt je bestanden naar GitHub *pushen* door gebruik te maken van Git via een shell. Je kunt verbinden met je GitHub account via HTTPS of SSL. 
 
-Met een *pull* kun je jouw lokale clone synchroniseren met de laatste stand van zaken op GitHub. Dit kan handig zijn wanneer je op verschillende locaties aan je opdrachten hebt gewerkt.
+Hiervoor dien je eerst via een shell te navigeren naar de root map van je repository op je computer.
 
-Hiervoor dien je eerst via een shell te navigeren naar de root map van je repository (bijvoorbeeld HTML) en gebruik je vervolgens het commando:
-
-```
-git pull
-```
-
-![git pull](https://codecrashers.nl/img/github/readme-github-git-pull.png)
-
-Om gewijzigde of toegevoegde bestanden in te leveren voer je achtereenvolgens de volgende commando's uit:
+Om jouw lokale mappenstructuur te uploaden naar je GitHub repository online voer je achtereenvolgens de volgende commando's uit:
 
 ```
 git add .
@@ -162,14 +165,38 @@ git commit -m "Een optioneel bericht"
 git push
 ```
 
-![git push](https://codecrashers.nl/img/github/readme-github-git-push.png)
+![git commit](https://codecrashers.nl/img/github/readme-git-commit.png)
 
-### Voortgang aangeven
+![git push](https://codecrashers.nl/img/github/readme-git-push.png)
 
-Het is dus altijd zaak dat je je GitHub repository met opdrachten zo veel mogelijk up-to-date houdt. Wanneer je één of meerdere nieuwe of verbeterde opdrachten op GitHub hebt gezet, dien je je je voortgang zo snel mogelijk bij te werken in CodeCrashers.
+Als je het goed hebt gedaan is de volledige mappenstructuur nu ook op GitHub te zien.
+
+### Opdrachten inleveren
+
+Om je gemaakte of verbeterde opdrachten in te leveren dien je simpelweg je gehele repository een keer te pushen, zoals hierboven uitgelegd. Doe dit zo vaak mogelijk - in ieder geval zodra je een volledige les af hebt, of aan het einde van een werkdag.
+
+![opdrachten inleveren](https://codecrashers.nl/img/github/readme-opdrachten-inleveren.png)
+
+Met een *pull* kun je jouw lokale clone synchroniseren met de laatste stand van zaken op GitHub. Dit kan handig zijn wanneer je op verschillende locaties aan je opdrachten hebt gewerkt.
+
+```
+git pull
+```
+
+![git pull](https://codecrashers.nl/img/github/readme-git-pull.png)
+
+Het is verstandig dat je altijd een keer *pullt* voordat je iets nieuws *pusht*, zeker wanneer je van computer hebt gewisseld. Zo kun je je lokale ontwikkelomgeving en je GitHub repository dus altijd *in sync* houden!
+
+Wanneer je één of meerdere nieuwe of verbeterde opdrachten op GitHub hebt gezet, dien je je je voortgang zo snel mogelijk bij te werken in CodeCrashers.
 
 Om aan te geven dat je een opdracht af hebt en deze wacht op feedback, verander je de status in het symbool van het klokje.
 
 ![opdracht aanbieden](https://codecrashers.nl/img/github/readme-cc-aanbieden.png)
 
 Je docent kan dan vanuit zijn dashboard zien dat er nieuwe opdrachten zijn die beoordeeld dienen te worden.
+
+---
+
+*Herhaal dit proces elke keer wanneer je aan een nieuw vak begint, zoals CSS, SEO, JavaScript of PHP.*
+
+![meerdere vakken](https://codecrashers.nl/img/github/readme-meerdere-vakken.png)
