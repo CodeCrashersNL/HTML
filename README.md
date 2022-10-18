@@ -1,5 +1,9 @@
 # CodeCrashers
 
+Deze repository correspondeert met de [**HTML**](https://codecrashers.nl/cursussen/html) cursus van CodeCrashers.
+
+---
+
 ## Handleiding opdrachten inleveren
 
 CodeCrashers maakt gebruik van GitHub om studenten te voorzien van een gestroomlijnd proces om opdrachten in te leveren bij hun docenten, en ervoor te zorgen dat zij vanuit elke locatie bij hun opdrachten kunnen komen. Bovendien zorgt het ervoor dat de betrokken docenten ook te allen tijde bij deze ingeleverde opdrachten kunnen komen, zonder dat er allerlei bestanden heen en weer verstuurd hoeven te worden.
