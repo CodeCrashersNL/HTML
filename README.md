@@ -1,6 +1,6 @@
 # CodeCrashers
 
-Deze repository correspondeert met de [**HTML**](https://codecrashers.nl/cursussen/html) cursus van CodeCrashers.
+Deze repository correspondeert met de [**HTML**](https://codecrashers.nl/lesmateriaal/html) cursus van CodeCrashers.
 
 ---
 
